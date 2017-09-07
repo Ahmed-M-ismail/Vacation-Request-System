@@ -9,10 +9,10 @@ While applying through the system, automatic email is send to the concern person
 
 
 
-features : 
+<b> features : </b>
 
 
-Employee Login
+Employee Login 
 Employee Registration
 Forgot Password
 Applying Leave
