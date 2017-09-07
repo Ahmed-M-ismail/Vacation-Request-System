@@ -1,0 +1,48 @@
+﻿@model BOL.Configuration
+
+@{
+    ViewBag.Title = "EditEmail";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>Edit email</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Configuration</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ID, "Admin email" , htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+          <input value="@ViewBag.email" required="required" class="form-control" type="email" id="mail" name="mail"/>
+                @Html.ValidationMessageFor(model => model.ID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Value,"Admin password" ,  htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input value="@ViewBag.pass" required="required" class="form-control" type="password" id="pass" name="pass" />
+                @Html.ValidationMessageFor(model => model.Value, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" style="background-color: #4b0082" class="btn btn-primary btn-block bte changepass" name="submit" value="Change Email">
+
+            </div>
+        </div>
+    </div>
+}
+
+

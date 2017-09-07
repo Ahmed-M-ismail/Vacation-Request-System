@@ -1,0 +1,72 @@
+﻿@model BOL.Employee
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutNonLoggedIn.cshtml";
+}
+
+
+
+
+
+
+<style>
+    form input[type="email"]:focus, form input[type="password"]:focus {
+        background: #DDD;
+        outline: none;
+        font-weight: bold;
+    }
+
+    .button, form input[type="submit"], form button, form input[type="reset"], .contact-form input[type="submit"] {
+        border: none;
+        background: #6D6D6D;
+        padding: 10px;
+        border-radius: 3px;
+        color: #F5F5F5;
+        outline: none;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+        -webkit-transition: .3s ease;
+        transition: .3s ease;
+    }
+</style>
+
+
+<div class="row" style=" margin-right: 0px; margin-left: 0px;">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+
+    
+        <div class="panel-body">
+            <h2>@TempData["passwordChanged"] </h2>          
+            @using (Html.BeginForm("Login", "Home", FormMethod.Post, new {@class = "login"}))
+            {
+
+                @Html.ValidationSummary(true)
+                <fieldset>
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => model.Email, new {@class = "required form-control", placeholder = "Enter Your Email", autofocus = "", type = "email", required = "required"})
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </div>
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => model.Password, new {@class = "required form-control", placeholder = "Enter Your Password", type = "password", required = "required"})
+                        @Html.ValidationMessageFor(model => model.Password)
+                    </div>
+                    <div class="checkbox">
+                    </div>
+                    <input type="submit" style="background-color: #4b0082" class="btn btn-primary btn-block " name="submit" value="LogIn">
+
+                    <a href="/Home/LostPassword" style="background-color: #4b0082" class="btn btn-primary btn-block ">Forget Password</a>
+
+
+                </fieldset>
+
+            }
+
+        </div>
+        </div>
+    </div><!-- /.col-->
+
+
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+

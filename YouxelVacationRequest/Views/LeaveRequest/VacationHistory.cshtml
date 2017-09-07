@@ -1,0 +1,90 @@
+﻿
+@model IEnumerable<BOL.Request>
+
+
+@{
+    ViewBag.Title = "VacationHistory";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>Vacation history</h2>
+<h1>
+    Your vacation balance is
+    @Convert.ToString(Session["VacationBalance"])
+    out of   @Convert.ToString(Session["BalanceLimit"])
+</h1>
+
+
+
+
+<table class="table table table-striped">
+    <tr>
+        <th>
+    Duration from
+        </th>
+        <th>
+          Duration to
+        </th>
+
+     
+
+        <th>
+         Num of days
+        </th>
+
+        <th>
+            Status
+        </th>
+
+        <th>Details</th>
+
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DurationFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DurationTo)
+            </td>
+
+         
+            <td>
+                @Html.DisplayFor(modelItem => item.CountDays)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestStatus.StatusName)
+            </td>
+
+
+            <td>
+
+                @Html.ActionLink("Detilas", "MYRequestDetails", new {id = item.ID}, new { @class = "btn btn-primary" })
+            </td>
+            @{
+                if (item.RequestStatusID == "1")
+                {
+                   
+
+
+
+
+                         <td>
+                             @{
+                             if (Convert.ToString(Session["UserTypeID"]) != "2")
+                             {                        @Html.ActionLink("Edit", "UpdateVacation", new { id = item.ID }, new { @class = "btn btn-primary" })
+
+                             }
+                             }
+                        @Html.ActionLink("Delete", "CancelVacation", new { id = item.ID }, new { @class = "btn btn-danger" })
+                    </td>
+                }
+            }
+        </tr>
+                }
+
+</table>

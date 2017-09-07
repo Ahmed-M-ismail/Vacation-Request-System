@@ -1,0 +1,19 @@
+﻿
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+
+
+$(".changepass").click(function() {
+    var password = document.getElementById("txtPassword").value;
+    var confirmPassword = document.getElementById("txtConfirmPassword").value;
+    if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+    }
+    return true;
+
+
+});
+ 

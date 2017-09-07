@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    @{
+        if (Session["LogedUserID"] == null)
+        {
+            Response.Redirect("~/Home/Login");
+        }
+    }
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vacation Sysytem</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet"/>
+    <link href="~/Content/simple-sidebar.css" rel="stylesheet"/>
+
+    <style>
+        
+        .required:after 
+{
+	content: "*";
+	font-weight: bold;
+	color: red; 
+}
+         table { overflow-x: scroll; }
+        th, td { min-width: 150px; }
+
+        .rendercontent {
+            padding-top: 80px;  /* choose whatever you want here */
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" style="background: #4b0082">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Weclome   @Session["LogedUserFname"]
+                        @Session["LogedUserLname"]
+                    
+                    </a>
+                </li>
+
+                @*<li>@Html.ActionLink("Edit Profile", "EditProf/" + Session["LogedUserID"], "WallPage")</li>
+                <li>@Html.ActionLink("Show Profile", "ShowProf/" + Session["LogedUserID"], "WallPage")</li>*@
+
+
+              
+
+
+
+@{
+    if (  Convert.ToString(Session["UserTypeID"]) != "2" && Convert.ToString(Session["UserTypeID"]) != "3")
+    {
+
+
+        <li>
+            <a data-toggle="collapse" href="#request">
+
+         
+                Send Request 
+            </a>
+      
+            <ul class="collapse" id="request">
+                <li>@Html.ActionLink("Apply for Vacaction", "ApplyVacation", "LeaveRequest")</li>
+                @{  if (Convert.ToString(Session["empType"]) != "topManager")
+                    {
+                        <li>@Html.ActionLink("Apply Work from home ", "ApplyWFH", "Wfh")</li>  }
+
+                }
+
+
+            </ul>
+        </li>
+
+
+
+        <li>
+            <a data-toggle="collapse" href="#history">
+                Show History
+            </a>
+            <ul class="collapse" id="history">
+                <li>@Html.ActionLink("Vacations", "VacationHistory", "LeaveRequest")</li>@{
+                    if (Convert.ToString(Session["empType"]) != "topManager")
+                    {
+                        <li>@Html.ActionLink("Working From Home ", "WfhHistory", "Wfh")</li>
+
+                    }
+                }
+
+
+    </ul>
+        </li>
+
+    }
+}
+
+
+
+           
+
+
+
+
+
+
+
+          
+                        <li><a href="/Notifications/ManagerShownotifications">Notifications ( @{ Html.RenderAction("numOfNotifications", "Notifications"); }  )</a></li>
+
+                @{
+                    if (Convert.ToString(Session["empType"]) != "normalEmp")
+                    {
+                <li>
+                  
+
+                    <a data-toggle="collapse" href="#approval">
+                        Approvals
+                    </a>
+                    <ul class="collapse" id="approval">
+                        <li>@Html.ActionLink("Vacations Approval", "ManagerShowRequests", "LeaveRequest")</li><li>@Html.ActionLink("WFH Approval", "ManagerShowRequests", "Wfh")</li>    
+              
+
+                    </ul>
+                </li>
+
+
+
+
+
+
+
+
+      
+                }
+}
+               
+
+@{
+    if (Convert.ToString(Session["UserTypeID"]) == "2")
+    {<li>@Html.ActionLink("Teams", "Index", "Teams") </li>
+        <li>@Html.ActionLink("Users", "Index", "Employees")</li>
+
+
+        <li>
+            <a data-toggle="collapse" href="#UpdateSettings">
+               Update settings
+            </a>
+            <ul class="collapse" id="UpdateSettings">
+
+              
+                    <li>@Html.ActionLink("Update youxel email", "EditEmail", "Home") </li>
+
+                @{
+
+                                                                                               <li>@Html.ActionLink("Update general balance", "EditGeneralBalance", "Home")</li>
+
+
+                                                                                           }
+
+
+            </ul>
+        </li>
+
+
+
+
+             
+             
+
+
+    }
+
+
+
+}    <li>@Html.ActionLink("Change password", "ChangePassword", "Home")</li>
+            <li>@Html.ActionLink("Logout " , "Logout", "Home")</li>
+
+
+
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" >
+                <div class="row">
+                    <div class="col-lg-12" >
+
+                        <nav  style="background: #ffffff; position: fixed">
+                            <div class="container" >
+                                <div class="row">
+
+                                    <div class="col-xs-5 col-lg-9">
+                                      
+                                       
+                                                <img src="~/images/YOUXEL_HORIZONTAL_creative_technology-01.jpg" width="300" height="60" />
+                                     
+                                    </div>
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div><!-- /.container-->
+                        </nav>
+                        <div class="rendercontent">
+                            @RenderBody()
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+       
+         
+
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+
+
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/myJS.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+
+</html>

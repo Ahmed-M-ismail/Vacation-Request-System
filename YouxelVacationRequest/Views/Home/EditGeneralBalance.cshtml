@@ -1,0 +1,46 @@
+﻿@model BOL.Configuration
+@{
+    ViewBag.Title = "EditGeneralBalance";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>Edit general balance</h2>
+
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Configuration</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ID, "General balance", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input value="@ViewBag.balance" required="required" class="form-control" type="number" id="balance" name="balance" min="0" max="200"/>
+
+
+                @Html.ValidationMessageFor(model => model.ID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+    
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" style="background-color: #4b0082" class="btn btn-primary btn-block bte changepass" name="submit" value="Change general balance">
+
+            </div>
+        </div>
+    </div>
+}
+
+

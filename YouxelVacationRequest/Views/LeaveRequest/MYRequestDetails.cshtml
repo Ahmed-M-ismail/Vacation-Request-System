@@ -1,0 +1,104 @@
+﻿
+@using System.CodeDom
+@model BOL.Request
+
+@{
+    ViewBag.Title = "MYRequestDetails";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>My request details</h2>
+
+
+
+<table class="table table table-striped">
+    <tr>
+        <td> Duration from</td>
+        <td>@Html.DisplayFor(model => model.DurationFrom)</td>
+    </tr>
+
+    <tr>
+        <td>Duration to</td>
+
+        <td>@Html.DisplayFor(model => model.DurationTo)</td>
+    </tr>
+
+
+
+    <tr>
+        <td>num of days</td>
+        <td>@Html.DisplayFor(model => model.CountDays)</td>
+
+    </tr>
+
+
+
+    <tr>
+
+        <td>@Html.DisplayNameFor(model => model.Comment)</td>
+
+        <td>@Html.DisplayFor(model => model.Comment)</td>
+
+    </tr>
+
+
+    <tr>
+        <td>Created at</td>
+        <td>@Html.DisplayFor(model => model.CreatedAT)</td>
+
+    </tr>
+
+
+    <tr>
+        <td>Last modified</td>
+        <td>@Html.DisplayFor(model => model.LastModified)</td>
+
+    </tr>
+
+
+
+
+
+
+
+    <tr>
+        <td>Status</td>
+        <td>@Html.DisplayFor(model => model.RequestStatus.StatusName)</td>
+
+    </tr>
+
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.VacationType.Type)</td>
+        <td>@Html.DisplayFor(model => model.VacationType.Type)</td>
+
+    </tr>
+
+
+    <tr>
+
+        @{
+            if (Model.RequestStatusID == "1")
+            {
+                <td>Action</td>
+            }
+        }
+        @{
+            if (Model.RequestStatusID == "1")
+            {
+                <td>
+                    @{
+                        if (Convert.ToString(Session["UserTypeID"]) != "2")
+                        {                        @Html.ActionLink("Edit", "UpdateVacation", new { id = Model.ID }, new { @class = "btn btn-primary" })
+
+                        }
+                    }
+                    @Html.ActionLink("Delete", "CancelVacation", new { id = Model.ID }, new { @class = "btn btn-danger" })
+                </td>
+                        }
+        }
+
+    </tr>
+
+</table>
+
+     

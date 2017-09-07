@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- IE Compatibility Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- First Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title - Vacation</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/styleHome.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/animate.css" rel="stylesheet"/>
+
+    <script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+    </script>
+
+</head>
+<body>
+
+<header class="site-header" style="background: #999;">
+    <div class="container ">
+
+
+
+
+
+
+        <div class="mobile-navigation"></div>
+    </div>
+</header>
+    <div class="btttt row " style="background-color: #4b0082"> Youxel Vacation Request </div>
+
+
+    @RenderBody()
+
+
+    <footer class="footer" style="margin-top: 320px">
+        <div class="container">
+            <p  style="background-color: #4b0082"class="text-center">Youxel  Vacation Mangment system .</p>
+        </div>
+    </footer>
+
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/plugin.js"></script>
+    <script src="~/Scripts/wow.min.js"></script>
+    <script>new WOW().init();</script>
+</body>
+</html>
+

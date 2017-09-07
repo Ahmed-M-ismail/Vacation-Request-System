@@ -1,0 +1,143 @@
+﻿@model BOL.Request
+@{
+    ViewBag.Title = "RequestDetails";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>Request details</h2>
+
+@{
+    if (Convert.ToString(Session["empType"]) != "normalEmp") { 
+        <table class="table table table-striped">
+
+
+
+            <tr>
+                <td>Name</td>
+
+                <td>@Html.DisplayFor(m => m.Employee.FName)
+                    @Html.DisplayFor(m => m.Employee.LName)</td>
+
+            </tr>
+
+
+            <tr>
+                <td>Date</td>
+
+                <td>@Html.DisplayFor(model => model.DurationTo)</td>
+            </tr>
+
+
+
+
+            <tr>
+
+                <td>@Html.DisplayNameFor(model => model.Comment)</td>
+
+                <td>@Html.DisplayFor(model => model.Comment)</td>
+
+            </tr>
+
+
+            <tr>
+                <td>Created at</td>
+                <td>@Html.DisplayFor(model => model.CreatedAT)</td>
+
+            </tr>
+
+
+            <tr>
+                <td>Last modified</td>
+                <td>@Html.DisplayFor(model => model.LastModified)</td>
+
+            </tr>
+
+
+
+
+
+
+
+            <tr>
+                <td>Status</td>
+                <td>@Html.DisplayFor(model => model.RequestStatus.StatusName)</td>
+
+            </tr>
+
+
+
+
+            <tr>
+
+                @{
+                    if (Model.RequestStatusID == "1")
+                    {
+
+                        if (Convert.ToString(Session["UserTypeID"]) == "2" || Convert.ToString(Session["empType"]) == "topManager" || Convert.ToString(Session["empType"]) == "lowerManager")
+                        {
+                                <td>Action</td>
+                            }
+                        
+                            }
+                }
+                @{
+                    if (Convert.ToString(Session["UserTypeID"]) == "2" || Convert.ToString(Session["empType"]) == "topManager" || Convert.ToString(Session["empType"]) == "lowerManager")
+                    {
+
+
+
+
+                        <td style="min-width: 200px;">
+                            @if (Convert.ToString(Session["UserTypeID"]) == "2")
+                            {
+                                @Html.ActionLink("Cancel", "CancelWFH", new {id = Model.ID}, new {@class = "btn btn-danger"})
+
+                                if (Model.RequestStatusID == "3")
+                                 {
+                                     <span> | </span>
+                                     @Html.ActionLink("Edit ", "UpdateWFH", new {id = Model.ID}, new {@class = "btn btn-primary"})
+                                 }
+
+                            }
+                    
+
+                            @if (Model.RequestStatusID == "1")
+                            {
+
+                                <span> | </span>
+                                @Html.ActionLink("Approve", "ApproveWfh", new { id = Model.ID }, new { @class = "btn btn-primary" })
+
+                                <span> | </span>
+                                    @Html.ActionLink("Reject", "RejectWfh", new { id = Model.ID }, new { @class = "btn  btn-danger" })
+
+
+                            }
+                        </td>
+
+
+
+                    }
+                }
+
+            </tr>
+
+        </table>
+
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

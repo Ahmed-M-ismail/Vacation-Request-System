@@ -1,0 +1,97 @@
+﻿
+@model BOL.Request
+@{
+    ViewBag.Title = "WFHHistory";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>Working from home history </h2>
+
+
+
+
+<table class="table table table-striped">
+
+    <tr>
+        <td>Date</td>
+
+        <td>@Html.DisplayFor(model => model.DurationTo)</td>
+    </tr>
+ 
+
+
+
+    <tr>
+
+        <td>@Html.DisplayNameFor(model => model.Comment)</td>
+
+        <td>@Html.DisplayFor(model => model.Comment)</td>
+
+    </tr>
+
+
+    <tr>
+        <td>Created at</td>
+        <td>@Html.DisplayFor(model => model.CreatedAT)</td>
+
+    </tr>
+
+
+    <tr>
+        <td>Last modified</td>
+        <td>@Html.DisplayFor(model => model.LastModified)</td>
+
+    </tr>
+
+
+
+
+
+
+
+    <tr>
+        <td>Status</td>
+        <td>@Html.DisplayFor(model => model.RequestStatus.StatusName)</td>
+
+    </tr>
+
+  
+
+
+    <tr>
+
+        @{
+            if (Model.RequestStatusID == "1")
+            {
+                <td>Action</td>
+            }
+        }
+        @{
+            if (Model.RequestStatusID == "1")
+            {
+                <td>
+                                         @Html.ActionLink("Edit", "UpdateWFH", new { id = Model.ID }, new { @class = "btn btn-primary" })
+
+                        
+                    }
+                    @Html.ActionLink("Delete", "CancelWFH", new { id = Model.ID }, new { @class = "btn btn-danger" })
+                </td>
+                        }
+        }
+
+    </tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+﻿@model BOL.Request
+
+@{
+    ViewBag.Title = "CancelVacation";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>Cancel vacation</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Request</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DurationFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DurationFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DurationTo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DurationTo)
+        </dd>
+
+      
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedAT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedAT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastModified)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastModified)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountDays)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestStatus.StatusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestStatus.StatusName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VacationType.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VacationType.Type)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+        @{
+            if (Convert.ToString(Session["UserTypeID"]) != "Admin")
+            {
+
+                @Html.ActionLink("Back to requests", "ManagerShowRequests")
+
+            }
+            else
+            {
+
+                @Html.ActionLink("Back to List", "VacationHistory")
+
+
+            }
+
+
+        }
+        </div>
+    }
+</div>

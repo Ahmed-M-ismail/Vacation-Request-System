@@ -1,0 +1,50 @@
+D:\YouxelVacationRequest\BLL\bin\Debug\BLL.dll.config
+D:\YouxelVacationRequest\BLL\bin\Debug\BLL.dll
+D:\YouxelVacationRequest\BLL\bin\Debug\BLL.pdb
+D:\YouxelVacationRequest\BLL\bin\Debug\DAL.dll
+D:\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.dll
+D:\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\YouxelVacationRequest\BLL\bin\Debug\DAL.pdb
+D:\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.xml
+D:\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\YouxelVacationRequest\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\YouxelVacationRequest\BLL\obj\Debug\BLL.dll
+D:\YouxelVacationRequest\BLL\obj\Debug\BLL.pdb
+E:\YouxelVacationRequest\BLL\bin\Debug\BLL.dll.config
+E:\YouxelVacationRequest\BLL\bin\Debug\BLL.dll
+E:\YouxelVacationRequest\BLL\bin\Debug\BLL.pdb
+E:\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.dll
+E:\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.SqlServer.dll
+E:\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.xml
+E:\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.SqlServer.xml
+E:\YouxelVacationRequest\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\YouxelVacationRequest\BLL\obj\Debug\BLL.dll
+E:\YouxelVacationRequest\BLL\obj\Debug\BLL.pdb
+E:\YouxelVacationRequest\BLL\bin\Debug\BOL.dll
+E:\YouxelVacationRequest\BLL\bin\Debug\BOL.pdb
+D:\Code first\YouxelVacationRequest\BLL\bin\Debug\BLL.dll.config
+D:\Code first\YouxelVacationRequest\BLL\bin\Debug\BLL.dll
+D:\Code first\YouxelVacationRequest\BLL\bin\Debug\BLL.pdb
+D:\Code first\YouxelVacationRequest\BLL\bin\Debug\BOL.dll
+D:\Code first\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.dll
+D:\Code first\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code first\YouxelVacationRequest\BLL\bin\Debug\BOL.pdb
+D:\Code first\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.xml
+D:\Code first\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code first\YouxelVacationRequest\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Code first\YouxelVacationRequest\BLL\obj\Debug\BLL.dll
+D:\Code first\YouxelVacationRequest\BLL\obj\Debug\BLL.pdb
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\BLL.dll.config
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\BLL.dll
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\BLL.pdb
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\BOL.dll
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.dll
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\System.Web.Mvc.dll
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\BOL.pdb
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.xml
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Code first\YouxelVacationRequest\BLL\bin\Debug\System.Web.Mvc.xml
+E:\Code first\YouxelVacationRequest\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\Code first\YouxelVacationRequest\BLL\obj\Debug\BLL.dll
+E:\Code first\YouxelVacationRequest\BLL\obj\Debug\BLL.pdb

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<BOL.Team>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>All teams </h2>
+
+
+@{
+    if (Convert.ToString(Session["UserTypeID"]) != "2")
+    {
+        Response.Redirect("~/LeaveRequest/VacationHistory");
+    }
+}
+
+
+
+<p>
+    @Html.ActionLink("Add New", "Create")
+</p>
+<table class="table  table table table-striped" >
+    <tr>
+        <th>
+            Team Name
+        </th>
+        <th>
+         Num of levels in team
+        </th>
+        <th>
+         Team Leader
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee.FName)
+            @Html.DisplayFor(modelItem => item.Employee.LName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {id = item.ID})  ||
+            <a href="@Url.Action("Get", "Workflow", new {id = item.ID})">Show Workflow</a>  || 
+            <a href="@Url.Action("Create", "Workflow", new {id = item.ID})">Assign Employee</a>
+
+
+       
+
+
+
+        </td>
+    </tr>
+}
+
+</table>

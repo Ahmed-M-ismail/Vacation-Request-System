@@ -1,0 +1,44 @@
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\YouxelVacationRequests.Tests.dll.config
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\YouxelVacationRequests.Tests.dll
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\YouxelVacationRequests.Tests.pdb
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BLL.dll
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.dll
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.SqlServer.dll
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BLL.pdb
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.xml
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.SqlServer.xml
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\obj\Debug\YouxelVacationRequests.Tests.csprojResolveAssemblyReference.cache
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\obj\Debug\YouxelVacationRequests.Tests.dll
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\obj\Debug\YouxelVacationRequests.Tests.pdb
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BOL.dll
+E:\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BOL.pdb
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\YouxelVacationRequests.Tests.dll.config
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\YouxelVacationRequests.Tests.dll
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\YouxelVacationRequests.Tests.pdb
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BLL.dll
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BOL.dll
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.dll
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BLL.pdb
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BOL.pdb
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.xml
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\obj\Debug\YouxelVacationRequests.Tests.csprojResolveAssemblyReference.cache
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\obj\Debug\YouxelVacationRequests.Tests.dll
+D:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\obj\Debug\YouxelVacationRequests.Tests.pdb
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\YouxelVacationRequests.Tests.dll.config
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\YouxelVacationRequests.Tests.dll
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\YouxelVacationRequests.Tests.pdb
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BLL.dll
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BOL.dll
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.dll
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.SqlServer.dll
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\System.Web.Mvc.dll
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BLL.pdb
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\BOL.pdb
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.xml
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\EntityFramework.SqlServer.xml
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\bin\Debug\System.Web.Mvc.xml
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\obj\Debug\YouxelVacationRequests.Tests.csprojResolveAssemblyReference.cache
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\obj\Debug\YouxelVacationRequests.Tests.dll
+E:\Code first\YouxelVacationRequest\YouxelVacationRequests.Tests\obj\Debug\YouxelVacationRequests.Tests.pdb

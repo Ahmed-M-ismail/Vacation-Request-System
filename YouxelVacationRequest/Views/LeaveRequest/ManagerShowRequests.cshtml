@@ -1,0 +1,89 @@
+﻿
+@model IEnumerable<BOL.Request>
+@{
+    ViewBag.Title = "ManagerShowRequests";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>Manager show requests</h2>
+
+
+@{  
+    if (Convert.ToString( Session["empType"]) != "normalEmp")
+    {
+
+
+<table class="table table table-striped">
+    <tr>
+
+        <th>
+            Full Name
+        </th>
+
+        <th>
+      Duration from
+        </th>
+
+
+        <th>
+      Duration to
+        </th>
+
+
+        <th>
+      
+          Num of days
+        </th>
+
+
+
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.FName)
+                @Html.DisplayFor(modelItem => item.Employee.LName)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.DurationFrom)
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.DurationTo)
+            </td>
+
+
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CountDays)
+            </td>
+
+          
+        
+
+                    <td>
+
+                        @Html.ActionLink("Details", "RequestDetails", new {id = item.ID}, new { @class = "btn btn-primary" })
+
+
+                    </td>
+                
+            
+
+        </tr>
+    }
+
+</table>
+
+
+
+    }
+}
