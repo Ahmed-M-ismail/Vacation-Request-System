@@ -12,45 +12,45 @@ While applying through the system, automatic email is send to the concern person
 <b> features : </b>
 
 
-Employee Login 
-Employee Registration
-Forgot Password
-Applying Leave
-Leave Requests by the users(Only for admin)
-Work From Home Requests
-Add Employee(Only for admin)
-Add Employee type(Only for admin)
-Add Leave Type(Only for admin)
-Manage Employees(Only for admin)
-Export All employees details in csv file(Only for admin)
-Export the leave applied by the employee in csv (Only for admin)
-Approving the leave request(Only for admin)
-Viewing the Leave Status By the User
-Delete Employees(Only for admin)
-Delete Leave Requests(Only for admin)
-Updating the Leaves?(Only for admin)
-Date Wise Leave Taken by the Employees(Only for admin)
-Add the Leave Status(Only For Admin)
-Details of the people who have chosed to work from home(Only For Admin)
-Check the leave balance.
-Employee Login
-Employee Registration
-Forgot Password
-Applying Leave
-Leave Requests by the users(Only for admin)
-Work From Home Requests
-Add Employee(Only for admin)
-Add Employee type(Only for admin)
-Add Leave Type(Only for admin)
-Manage Employees(Only for admin)
-Export All employees details in csv file(Only for admin)
-Export the leave applied by the employee in csv (Only for admin)
-Approving the leave request(Only for admin)
-Viewing the Leave Status By the User
-Delete Employees(Only for admin)
-Delete Leave Requests(Only for admin)
-Updating the Leaves?(Only for admin)
-Date Wise Leave Taken by the Employees(Only for admin)
-Add the Leave Status(Only For Admin)
-Details of the people who have chosed to work from home(Only For Admin)
-Check the leave balance.
+Employee Login  </br>
+Employee Registration </br>
+Forgot Password </br>
+Applying Leave </br>
+Leave Requests by the users(Only for admin) </br>
+Work From Home Requests </br>
+Add Employee(Only for admin) </br>
+Add Employee type(Only for admin) </br>
+Add Leave Type(Only for admin) </br>
+Manage Employees(Only for admin) </br>
+Export All employees details in csv file(Only for admin) </br>
+Export the leave applied by the employee in csv (Only for admin) </br>
+Approving the leave request(Only for admin) </br>
+Viewing the Leave Status By the User </br>
+Delete Employees(Only for admin) </br>
+Delete Leave Requests(Only for admin) </br>
+Updating the Leaves?(Only for admin)</br>
+Date Wise Leave Taken by the Employees(Only for admin) </br>
+Add the Leave Status(Only For Admin) </br>
+Details of the people who have chosed to work from home(Only For Admin) </br>
+Check the leave balance. </br>
+Employee Login </br>
+Employee Registration </br>
+Forgot Password </br>
+Applying Leave </br>
+Leave Requests by the users(Only for admin) </br>
+Work From Home Requests </br>
+Add Employee(Only for admin) </br>
+Add Employee type(Only for admin) </br>
+Add Leave Type(Only for admin) </br>
+Manage Employees(Only for admin) </br>
+Export All employees details in csv file(Only for admin) </br>
+Export the leave applied by the employee in csv (Only for admin) </br>
+Approving the leave request(Only for admin) </br>
+Viewing the Leave Status By the User </br>
+Delete Employees(Only for admin) </br>
+Delete Leave Requests(Only for admin) </br>
+Updating the Leaves?(Only for admin) </br>
+Date Wise Leave Taken by the Employees(Only for admin) </br>
+Add the Leave Status(Only For Admin) </br>
+Details of the people who have chosed to work from home(Only For Admin) </br>
+Check the leave balance. </br>
